@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mobile.rojas.com.budgetcare.activity.AccountActivity"
+    tools:showIn="@layout/activity_account">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/form_padding">
+
+        <EditText
+            android:id="@+id/mAccountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/account_name_hint"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/form_padding">
+
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/account_type_hint"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <!--android:textColor="@color/accent"-->
+
+
+        <Spinner
+            android:id="@+id/spinner_account_type"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/form_padding">
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/account_type_currenty_hint"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <!--android:textColor="@color/accent"-->
+
+
+        <Spinner
+            android:id="@+id/spinner_account_type_currency"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/form_padding">
+
+        <EditText
+            android:id="@+id/mAcccountBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/account_balance_hint"
+            android:inputType="numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/form_padding">
+
+        <EditText
+            android:id="@+id/mAccountDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/account_datetime_hint"
+            android:onClick="setDate"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Switch
+        android:id="@+id/mSwitchSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/form_padding"
+        android:text="@string/account_boolean_sum" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveAccount"
+        android:padding="@dimen/form_padding"
+        android:text="@string/btn_save" />
+
+
+</LinearLayout>

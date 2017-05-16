@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="padding_menu">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="corner_cardview">4dp</dimen>
+    <dimen name="elevation_toolbar">4dp</dimen>
+    <dimen name="form_title_dimen">25dp</dimen>
+    <dimen name="form_padding">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_expandable_name">25dp</dimen>
+</resources>
